@@ -1,0 +1,7 @@
+dist/
+build/
+*.spec
+records.json
+.idea/
+.DS_Store
+
