@@ -1,5 +1,24 @@
 # 🐱 Cat One Day
 
+⚠️ The game contains foul language. 18+
+
+A text-based adventure game about the life of a cat with a strong personality. This project serves as a showcase of Python development, Git proficiency, and DevOps automation.
+
+## ✨ Features
+* **Cross-platform**: Automated builds for Windows, macOS, and Linux.
+* **Smart Saves**: Uses `platformdirs` to store records in standard system folders (AppData, Library, etc.).
+* **CI/CD Powered**: Powered by GitHub Actions for seamless delivery.
+
+## 🚀 How to Play
+No Python installation required! Just download the version for your OS:
+
+1. Go to [Releases](https://github.com/zeroootwo/CatOneDay/releases).
+2. Download and extract the archive.
+3. Run the executable.
+   * *Note for Linux/Mac: You might need to run `chmod +x "Cat one day"` first.*
+
+# 🐱 Cat One Day
+
 ⚠️ В игре присутствует ненормативная лексика. 18+
 
 Увлекательная текстовая приключенческая игра о жизни обычного (или не совсем?) котика. Проект создан как практическая работа по освоению Python, Git и автоматизации DevOps.
