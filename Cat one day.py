@@ -125,7 +125,6 @@ def start_game():
             match ans:
                 case 1:
                     lives-=1
-                    #input(f"-1 жизнь.\n{player_name} делает «бомбочку» на спящего человека. Хозяин с перепугу рефлекторно откидывает кота. \nПолет в стену заканчивается больно.")
                     draw_box(["-1 жизнь.",
                               "---",
                              f"{player_name} делает «бомбочку» на спящего человека. Хозяин с перепугу рефлекторно откидывает кота. \nПолет в стену заканчивается больно."])
@@ -193,8 +192,8 @@ def start_game():
             os.system('cls' if os.name == 'nt' else 'clear')
             print("В чем дело? Надо цифру ввести, а не что захочется")
     os.system('cls' if os.name == 'nt' else 'clear')
+    #Глава 3
     while True:
-        #Глава 3
         try:
             draw_hud(lives, score)
             print(r"""
@@ -254,8 +253,8 @@ def start_game():
         os.system('cls' if os.name == 'nt' else 'clear')
         return
     os.system('cls' if os.name == 'nt' else 'clear')
+    #Глава 4
     while True:
-        #Глава 4
         try:
             draw_hud(lives, score)
             draw_box([f"Хозяева вернулись. На кухне пахнет жареной курицей так сильно, что у {player_name} \nкружится голова. Хозяин отвернулся, нарезая салат. На краю стола стоит тарелка с \nостывающими кусочками филе. Этот запах сводит с ума.",
@@ -304,8 +303,8 @@ def start_game():
         os.system('cls' if os.name == 'nt' else 'clear')
         return
     os.system('cls' if os.name == 'nt' else 'clear')
+    #Глава 5
     while True:
-        #Глава 5
         try:
             draw_hud(lives, score)
             draw_box([f"Глубокая ночь. Луна светит в окно. Все нормальные существ спят, но у {player_name} \nрасширяются зрачки. Древние демоны скорости вселяются в его пушистое тело. \nЭнергия переполняет лапы. Ему нужно бежать. Быстро. Везде. СЕЙЧАС.",
