@@ -15,7 +15,7 @@ No Python installation required! Just download the version for your OS:
 1. Go to [Releases](https://github.com/zeroootwo/CatOneDay/releases).
 2. Download and extract the archive.
 3. Run the executable.
-   * *Note for Linux/Mac: You might need to run `chmod +x "Cat one day"` first.*
+   * *Note for Linux/Mac: You might need to run `chmod +x Cat\ one\ day` first.*
 
 # 🐱 Cat One Day
 
