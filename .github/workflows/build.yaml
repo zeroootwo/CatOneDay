@@ -23,11 +23,13 @@ jobs:
         python-version: '3.13' # Твоя версия Python
 
     - name: Install dependencies
+      working-directory: Cat_one_day
       run: |
         python -m pip install --upgrade pip
         pip install pyinstaller platformdirs # Ставим нужные библиотеки
 
     - name: Build with PyInstaller
+      working-directory: Cat_one_day
       run: pyinstaller --onefile "Cat one day.py"
 
     - name: Upload Artifact
