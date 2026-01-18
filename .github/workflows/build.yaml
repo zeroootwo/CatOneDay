@@ -2,7 +2,7 @@ name: Build Cat Game
 
 on:
   push:
-    branches: [ "main", "master" ] # Запускать, когда пушишь в главную ветку
+    branches: [ "main", "master" ]
 
 jobs:
   build:
@@ -10,7 +10,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        # Собираем сразу на двух разных операционках
         os: [windows-latest, ubuntu-latest, macos-latest]
 
     steps:
@@ -20,20 +19,18 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.13' # Твоя версия Python
+        python-version: '3.13'
 
     - name: Install dependencies
-      working-directory: Cat_one_day
       run: |
         python -m pip install --upgrade pip
-        pip install pyinstaller platformdirs # Ставим нужные библиотеки
+        pip install pyinstaller platformdirs
 
     - name: Build with PyInstaller
-      working-directory: Cat_one_day
       run: pyinstaller --onefile "Cat one day.py"
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
         name: Cat-One-Day-${{ matrix.os }}
-        path: Cat_one_day/dist/
+        path: dist/
