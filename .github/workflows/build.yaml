@@ -36,4 +36,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Cat-One-Day-${{ matrix.os }}
-        path: dist/
+        path: Cat_one_day/dist/
